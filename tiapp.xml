@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-development" type="string">xY9yIAc7nEfrNWWa1qyb9qRapryYFNKw</property>
+    <property name="acs-oauth-key-development" type="string">kDt0qOB4jG0j4JMSlHknhSGMT4A472nT</property>
+    <property name="acs-api-key-development" type="string">jKxcOZ8rnGb6PyCprE9IDPRry3QnRkYH</property>
+    <property name="acs-oauth-secret-production" type="string">5d3u6LBCkn2qODv5Jph3e7S1EtaZVZZ4</property>
+    <property name="acs-oauth-key-production" type="string">Qp1MKuQPAZAIzYiSnOU9m5tIDEPJjojR</property>
+    <property name="acs-api-key-production" type="string">CdEUrS8y2pH5DrWwKyAIHwXd5Euc32SV</property>
+    <deployment-targets>
+        <target device="tizen">false</target>
+        <target device="mobileweb">false</target>
+        <target device="iphone">false</target>
+        <target device="ipad">false</target>
+        <target device="blackberry">false</target>
+        <target device="android">true</target>
+    </deployment-targets>
+    <sdk-version>3.1.1.GA</sdk-version>
+    <id>com.findbreak.test</id>
+    <name>Findtest</name>
+    <version>1.0</version>
+    <publisher>ignacio</publisher>
+    <url>http://www.findbreak.com</url>
+    <description>not specified</description>
+    <copyright>2013 by ignacio</copyright>
+    <icon>icon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>aca78b2b-803c-4cb6-95aa-a962ca20b15c</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android">ti.map</module>
+        <module platform="android">ti.cloudpush</module>
+    </modules>
+</ti:app>
